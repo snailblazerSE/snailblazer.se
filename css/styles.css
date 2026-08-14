@@ -241,38 +241,11 @@ h3 { font-size: 1.15rem; margin-bottom: 10px; }
   gap: 56px;
   align-items: center;
 }
-.machine-svg { width: 100%; height: auto; }
-
-.machine-base-lg, .machine-feet-lg { fill: var(--machine-black); }
-
-.machine-body-lg, .machine-top-lg {
-  fill: var(--creme-machine);
-  stroke: var(--machine-black);
-  stroke-width: 2;
-}
-.machine-vent-lg { fill: var(--chrome-dim); opacity: 0.6; }
-
-.machine-drip-lg { fill: var(--chrome); stroke: var(--machine-black); stroke-width: 1.5; }
-.machine-drip-slit-lg { fill: var(--machine-black); opacity: 0.35; }
-.machine-accent-lg { fill: var(--copper); }
-
-.machine-gauge-lg circle:first-child { fill: var(--machine-black); }
-.machine-gauge-face-lg { fill: var(--chrome); }
-.machine-gauge-needle-lg { stroke: var(--copper); stroke-width: 2; stroke-linecap: round; }
-
-.machine-wand-lg { fill: none; stroke: var(--chrome); stroke-width: 6; stroke-linecap: round; }
-
-.machine-grouphead-lg { fill: var(--machine-black); }
-.machine-knob-lg { fill: var(--machine-black); stroke: var(--chrome); stroke-width: 1.5; }
-.machine-knob-center-lg { fill: var(--copper); }
-.machine-portafilter-lg { fill: var(--machine-black); }
-
-.machine-label {
-  fill: var(--creme-dim);
-  font-size: 12px;
-  letter-spacing: 0.1em;
-  font-family: var(--font);
-  font-weight: 700;
+.machine-photo {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
 }
 
 .spec-list {
@@ -304,9 +277,21 @@ h3 { font-size: 1.15rem; margin-bottom: 10px; }
   gap: 56px;
   align-items: center;
 }
-.baristan-visual { max-width: 260px; margin: 0 auto; }
-.barista-head, .barista-body { fill: var(--bg-alt); stroke: var(--creme-dim); stroke-width: 2; }
-.barista-apron-strap { fill: var(--copper); }
+.baristan-visual { max-width: 320px; margin: 0 auto; text-align: center; }
+.barista-photo {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+}
+.barista-caption {
+  margin: 14px 0 0;
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  letter-spacing: 0.04em;
+}
 
 /* Steps */
 .steps { margin-top: 8px; }
