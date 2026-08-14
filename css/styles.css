@@ -5,8 +5,16 @@
   --text-dim: #b3a99c;
   --creme: #f5ede0;
   --creme-dim: #d8ccb8;
+  --creme-machine: #efdcb9;
   --line: #2a2622;
   --white: #ffffff;
+  --copper: #cc7c47;
+  --copper-dim: #a6633a;
+  --sage: #7f9b74;
+  --dusty-blue: #6f93ab;
+  --machine-black: #1c1a17;
+  --chrome: #cfd3d8;
+  --chrome-dim: #9a9d9f;
   --radius: 14px;
   --max-width: 1140px;
   --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
@@ -122,7 +130,7 @@ a { color: inherit; }
 .btn:hover { transform: translateY(-1px); }
 
 .btn-primary {
-  background: var(--creme);
+  background: linear-gradient(135deg, var(--creme), var(--copper) 160%);
   color: #241d13;
 }
 .btn-primary:hover { opacity: 0.92; }
@@ -132,7 +140,7 @@ a { color: inherit; }
   color: var(--text);
   background: transparent;
 }
-.btn-outline:hover { border-color: var(--creme-dim); }
+.btn-outline:hover { border-color: var(--copper); color: var(--copper); }
 
 .btn-small { padding: 9px 18px; font-size: 0.88rem; }
 
@@ -184,11 +192,11 @@ h3 { font-size: 1.15rem; margin-bottom: 10px; }
 
 .hero-svg { width: 100%; height: auto; }
 .hero-ring { fill: none; stroke: var(--line); stroke-width: 1; }
-.machine-body, .machine-top { fill: var(--bg-alt); stroke: var(--creme-dim); stroke-width: 2; }
-.machine-group { fill: var(--creme); }
-.machine-dial { fill: var(--creme-dim); }
-.machine-drip { fill: var(--bg); stroke: var(--creme-dim); stroke-width: 2; }
-.machine-legs { fill: var(--line); }
+.machine-body, .machine-top { fill: var(--creme-machine); stroke: var(--machine-black); stroke-width: 2; }
+.machine-group { fill: var(--machine-black); }
+.machine-dial { fill: var(--copper); }
+.machine-drip { fill: var(--machine-black); stroke: var(--chrome); stroke-width: 2; }
+.machine-legs { fill: var(--machine-black); }
 
 /* Grid / cards */
 .grid { display: grid; gap: 24px; }
@@ -198,10 +206,16 @@ h3 { font-size: 1.15rem; margin-bottom: 10px; }
 .card {
   background: var(--bg-alt);
   border: 1px solid var(--line);
+  border-top: 3px solid var(--creme);
   border-radius: var(--radius);
   padding: 28px 24px;
 }
 .card p { color: var(--text-dim); margin: 0; font-size: 0.96rem; }
+
+.grid-4 .card:nth-child(1) { border-top-color: var(--copper); }
+.grid-4 .card:nth-child(2) { border-top-color: var(--sage); }
+.grid-4 .card:nth-child(3) { border-top-color: var(--dusty-blue); }
+.grid-4 .card:nth-child(4) { border-top-color: var(--creme); }
 
 .card-icon {
   width: 48px;
@@ -215,6 +229,10 @@ h3 { font-size: 1.15rem; margin-bottom: 10px; }
   stroke-linecap: round;
   stroke-linejoin: round;
 }
+.grid-4 .card:nth-child(1) .icon-stroke { stroke: var(--copper); }
+.grid-4 .card:nth-child(2) .icon-stroke { stroke: var(--sage); }
+.grid-4 .card:nth-child(3) .icon-stroke { stroke: var(--dusty-blue); }
+.grid-4 .card:nth-child(4) .icon-stroke { stroke: var(--creme); }
 
 /* Maskinen */
 .maskinen-inner {
@@ -224,14 +242,35 @@ h3 { font-size: 1.15rem; margin-bottom: 10px; }
   align-items: center;
 }
 .machine-svg { width: 100%; height: auto; }
-.machine-body-lg, .machine-top-lg, .machine-group-lg { fill: var(--bg); stroke: var(--creme); stroke-width: 2; }
-.machine-dial-lg { fill: var(--creme); }
-.machine-drip-lg { fill: var(--bg-alt); stroke: var(--creme-dim); stroke-width: 2; }
-.machine-tray-lg { fill: var(--creme-dim); opacity: 0.5; }
+
+.machine-base-lg, .machine-feet-lg { fill: var(--machine-black); }
+
+.machine-body-lg, .machine-top-lg {
+  fill: var(--creme-machine);
+  stroke: var(--machine-black);
+  stroke-width: 2;
+}
+.machine-vent-lg { fill: var(--chrome-dim); opacity: 0.6; }
+
+.machine-drip-lg { fill: var(--chrome); stroke: var(--machine-black); stroke-width: 1.5; }
+.machine-drip-slit-lg { fill: var(--machine-black); opacity: 0.35; }
+.machine-accent-lg { fill: var(--copper); }
+
+.machine-gauge-lg circle:first-child { fill: var(--machine-black); }
+.machine-gauge-face-lg { fill: var(--chrome); }
+.machine-gauge-needle-lg { stroke: var(--copper); stroke-width: 2; stroke-linecap: round; }
+
+.machine-wand-lg { fill: none; stroke: var(--chrome); stroke-width: 6; stroke-linecap: round; }
+
+.machine-grouphead-lg { fill: var(--machine-black); }
+.machine-knob-lg { fill: var(--machine-black); stroke: var(--chrome); stroke-width: 1.5; }
+.machine-knob-center-lg { fill: var(--copper); }
+.machine-portafilter-lg { fill: var(--machine-black); }
+
 .machine-label {
   fill: var(--creme-dim);
-  font-size: 13px;
-  letter-spacing: 0.12em;
+  font-size: 12px;
+  letter-spacing: 0.1em;
   font-family: var(--font);
   font-weight: 700;
 }
@@ -255,7 +294,7 @@ h3 { font-size: 1.15rem; margin-bottom: 10px; }
   top: 8px;
   width: 14px;
   height: 2px;
-  background: var(--creme);
+  background: var(--copper);
 }
 
 /* Baristan */
@@ -267,14 +306,17 @@ h3 { font-size: 1.15rem; margin-bottom: 10px; }
 }
 .baristan-visual { max-width: 260px; margin: 0 auto; }
 .barista-head, .barista-body { fill: var(--bg-alt); stroke: var(--creme-dim); stroke-width: 2; }
-.barista-apron-strap { fill: var(--creme); opacity: 0.85; }
+.barista-apron-strap { fill: var(--copper); }
 
 /* Steps */
 .steps { margin-top: 8px; }
 .step {
-  border-top: 1px solid var(--line);
+  border-top: 2px solid var(--line);
   padding-top: 24px;
 }
+.step:nth-child(1) { border-top-color: var(--copper); }
+.step:nth-child(2) { border-top-color: var(--sage); }
+.step:nth-child(3) { border-top-color: var(--dusty-blue); }
 .step-number {
   display: block;
   font-size: 0.85rem;
