@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Snailblazer — Kaffeevent med barista &amp; La Marzocco</title>
-<meta name="description" content="Snailblazer erbjuder kaffeevent med professionell barista och en La Marzocco Linea Mini R (Crème) till företagsevent, fester, pop-ups och kaffekurser.">
+<meta name="description" content="Snailblazer erbjuder kaffeevent med professionell barista och en La Marzocco Linea Mini R till företagsevent, fester, pop-ups och kaffekurser.">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 <link rel="stylesheet" href="css/styles.css">
 <meta property="og:title" content="Snailblazer — Kaffeevent med barista">
@@ -17,8 +17,12 @@
 
 <header class="site-header">
   <div class="container header-inner">
-    <a href="#top" class="logo">Snailblazer</a>
+    <a href="#top" class="logo">
+      <img src="assets/logo.png" alt="Snailblazer" class="logo-mark">
+      Snailblazer
+    </a>
     <nav class="main-nav" id="main-nav">
+      <a href="#om-oss">Om oss</a>
       <a href="#tjanster">Tjänster</a>
       <a href="#maskinen">Maskinen</a>
       <a href="#baristan">Baristan</a>
@@ -39,24 +43,27 @@
       <div class="hero-text">
         <p class="eyebrow">Kaffeevent från Snailblazer</p>
         <h1>Barista-kaffe, där ni är.</h1>
-        <p class="hero-lead">Vi tar med oss en La Marzocco Linea Mini R i Crème och en erfaren barista till ert nästa event — företagskickoff, fest, pop-up eller kaffekurs. Riktigt bra kaffe, ingen logistik för er.</p>
+        <p class="hero-lead">Vi tar med oss en La Marzocco Linea Mini R och en erfaren barista till ert nästa event — företagskickoff, fest, pop-up eller kaffekurs. Riktigt bra kaffe, ingen logistik för er.</p>
         <div class="hero-actions">
           <a href="#kontakt" class="btn btn-primary">Boka ett event</a>
           <a href="#tjanster" class="btn btn-outline">Se vad vi erbjuder</a>
         </div>
       </div>
-      <div class="hero-visual" aria-hidden="true">
-        <svg viewBox="0 0 400 400" class="hero-svg">
-          <circle cx="200" cy="200" r="180" class="hero-ring"/>
-          <g transform="translate(90,110)">
-            <rect x="0" y="60" width="180" height="110" rx="14" class="machine-body"/>
-            <rect x="14" y="30" width="152" height="40" rx="8" class="machine-top"/>
-            <rect x="30" y="0" width="40" height="34" rx="6" class="machine-group"/>
-            <circle cx="150" cy="50" r="9" class="machine-dial"/>
-            <rect x="55" y="130" width="70" height="14" rx="4" class="machine-drip"/>
-            <rect x="80" y="144" width="20" height="26" class="machine-legs"/>
-          </g>
-        </svg>
+      <div class="hero-visual">
+        <img src="assets/photos/hero-vagn.jpg" alt="Snailblazer på plats med kaffevagn och La Marzocco-maskin" class="hero-photo">
+      </div>
+    </div>
+  </section>
+
+  <section class="section om-oss" id="om-oss">
+    <div class="container om-oss-inner">
+      <div>
+        <p class="eyebrow">Om oss</p>
+        <h2>Namnet är ingen slump.</h2>
+      </div>
+      <div class="om-oss-text">
+        <p>En snigel tar sig tid att göra det rätt. En blazer vågar bana ny väg. Snailblazer föddes ur den kombinationen — övertygelsen om att kaffe blir som bäst när ingen stressar fram det, men att det ändå ska kunna dyka upp precis där ni är, oavsett om det är en kontorslobby, ett marknadstält eller en bröllopsfest.</p>
+        <p>Vi tror på gott, rent och rättvist kaffe: bönor med ett ursprung vi står för, hanterat av någon som faktiskt kan sitt hantverk. Inga genvägar, ingen stress — bara riktigt bra kaffe, tillagat med omsorg, för människor som tar sig tid att uppskatta det.</p>
       </div>
     </div>
   </section>
@@ -106,17 +113,17 @@
   <section class="section section-dark" id="maskinen">
     <div class="container maskinen-inner">
       <div class="maskinen-visual">
-        <img src="assets/photos/linea-mini-r.jpg" alt="Snailblazers La Marzocco Linea Mini R i Crème" class="machine-photo">
+        <img src="assets/photos/linea-mini-r.jpg" alt="Snailblazers La Marzocco Linea Mini R" class="machine-photo">
       </div>
       <div class="maskinen-text">
         <p class="eyebrow">Maskinen</p>
-        <h2>La Marzocco Linea Mini R — i Crème</h2>
-        <p class="section-lead">Samma dubbelpannesystem och PID-styrda temperatur som proffsen använder på café, fast i format som passar vilket event som helst. Vår maskin är i den varma Crème-färgen — en detalj som matchar Snailblazers egen känsla lika mycket som den lagar ett perfekt espressoskott.</p>
+        <h2>La Marzocco Linea Mini R</h2>
+        <p class="section-lead">Samma dubbelpannesystem och PID-styrda temperatur som proffsen använder på café, fast i format som passar vilket event som helst. En maskin byggd för hantverk och precision, skott efter skott.</p>
         <ul class="spec-list">
           <li>Dubbla oberoende pannor för espresso och ånga samtidigt</li>
           <li>PID-styrd temperaturkontroll för jämn extraktion, skott efter skott</li>
           <li>Handbyggd i Florens av La Marzocco</li>
-          <li>Färg: Crème — varm, tidlös, matchar vår profil</li>
+          <li>Kompakt format som får plats i vilken lokal som helst</li>
         </ul>
       </div>
     </div>
@@ -213,10 +220,12 @@
 </main>
 
 <footer class="site-footer">
-  <div class="container footer-inner">
-    <span class="logo footer-logo">Snailblazer</span>
-    <p>&copy; <span id="year"></span> Snailblazer. Kaffeevent med barista och La Marzocco Linea Mini R.</p>
-    <a href="mailto:hej@snailblazer.se">hej@snailblazer.se</a>
+  <div class="container">
+    <img src="assets/logo.png" alt="Snailblazer — Specialkaffe, hantverk, på plats" class="footer-logo-full">
+    <div class="footer-inner">
+      <p>&copy; <span id="year"></span> Snailblazer. Kaffeevent med barista och La Marzocco Linea Mini R.</p>
+      <a href="mailto:hej@snailblazer.se">hej@snailblazer.se</a>
+    </div>
   </div>
 </footer>
 
