@@ -13,11 +13,9 @@ assets/favicon.svg
 
 ## Innan sidan går live
 
-1. **Kontaktformulär (Formspree)**
-   - Skapa ett gratiskonto på [formspree.io](https://formspree.io) och skapa ett nytt formulär.
-   - Kopiera formulär-ID:t och ersätt `YOUR_FORM_ID` i `index.html` (sök efter `formspree.io/f/YOUR_FORM_ID`).
-2. **E-postadress** — sidan använder `hej@snailblazer.se` som platshållare. Byt till er riktiga adress i `index.html` (sök på `hej@snailblazer.se`).
-3. **Bilder** — hero, maskin och barista är just nu enkla SVG-illustrationer i Snailblazers färger. Byt gärna ut dem mot riktiga foton när ni har dem (lägg bilder i `assets/` och uppdatera `index.html`).
+1. **Kontaktformulär (Formspree)** — formuläret är kopplat till ett Formspree-formulär (`formspree.io/f/xwleqjvp`). Byt formulär-ID i `index.html` om ni vill koppla till ett annat konto.
+2. **Telefonnummer** — numret visas som en bild (`assets/tel-number.png`) istället för vanlig text, så det inte går att kopiera rakt av. Om numret ändras: generera en ny bild (se `assets/photos/` för källfiler) och ersätt filen.
+3. **Bilder** — hero, maskin och barista använder riktiga foton i `assets/photos/`. Byt ut dem vid behov och uppdatera `index.html`.
 
 ## Publicera med GitHub + Cloudflare Pages
 

@@ -398,6 +398,17 @@ textarea { resize: vertical; }
   font-size: 0.9rem;
 }
 .footer-inner a { text-decoration: none; color: var(--text-dim); }
+.footer-legal {
+  margin: 20px 0 0;
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  opacity: 0.7;
+}
+
+.tel-row { display: flex; align-items: center; gap: 10px; }
+.tel-image { height: 20px; width: auto; display: block; }
+.tel-image-small { height: 16px; }
 
 /* Responsive */
 @media (max-width: 900px) {
