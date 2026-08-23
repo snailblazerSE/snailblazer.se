@@ -193,7 +193,6 @@ h3 { font-size: 1.15rem; margin-bottom: 10px; }
   width: 100%;
   height: auto;
   border-radius: var(--radius);
-  border: 1px solid var(--line);
 }
 
 /* Om oss */
@@ -257,8 +256,6 @@ h3 { font-size: 1.15rem; margin-bottom: 10px; }
 .machine-photo {
   width: 100%;
   height: auto;
-  border-radius: var(--radius);
-  border: 1px solid var(--line);
 }
 
 .spec-list {
