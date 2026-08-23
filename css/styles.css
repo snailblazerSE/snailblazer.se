@@ -372,6 +372,23 @@ textarea { resize: vertical; }
   margin: 0;
 }
 
+/* Instagram */
+.instagram-section { text-align: center; }
+.instagram-section .section-lead { margin-left: auto; margin-right: auto; text-align: center; margin-bottom: 32px; }
+.instagram-icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  color: var(--text);
+  margin-bottom: 24px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.instagram-icon-link:hover { color: var(--copper); border-color: var(--copper); }
+
 /* Footer */
 .site-footer {
   border-top: 1px solid var(--line);
